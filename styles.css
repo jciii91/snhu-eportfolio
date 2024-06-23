@@ -1,9 +1,11 @@
+/* Reset and basic styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
+/* Header styles */
 header {
     background-color: #333;
     color: #fff;
@@ -11,6 +13,7 @@ header {
     text-align: center;
 }
 
+/* Navigation styles */
 nav {
     background-color: #f4f4f4;
     padding: 10px 0;
@@ -27,16 +30,74 @@ nav a:hover {
     background-color: #ddd;
 }
 
+/* Section styles */
 section {
-    padding: 20px;
+    padding-left: 20px;
 }
 
+/* Footer styles */
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 20px;
-    position: fixed;
+    position: relative;
     width: 100%;
-    bottom: 0;
+}
+
+/* Contact section styles */
+#contact {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    color: #666;
+    font-size: 16px;
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* About Me section styles */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.profile-pic {
+    max-width: 250px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.about-text {
+    flex: 1;
 }

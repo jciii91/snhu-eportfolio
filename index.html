@@ -4,35 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>My ePortfolio</title>
+    <title>John Costello ePortfolio</title>
 </head>
 <body>
     <header>
-        <h1>My ePortfolio</h1>
+        <h1>John Costello ePortfolio</h1>
     </header>
     <nav>
-        <a href="#about">About Me</a>
+        <a href="#about">Professional Self-Assessment</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
     <section id="about">
-        <h2>About Me</h2>
-        <p>My name is John Costello and I am a Computer Science student from SNHU.</p>
+        <h2>Professional Self-Assessment</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Hello, my name is John Costello, and I am a recent graduate from the Southern New Hampshire University Computer Science program. I began this degree with the goal of becoming more employable in the computer science field and identifying what my passion in the industry is. SNHU provided me with a wide array of courses to learn from.</p>
+                <p>I was afforded the opportunity to learn many important languages such as C++, Java, Python, and more. In addition to these high-level languages, I was also taught how to build and manage databases, both SQL and NoSQL (MongoDB being the NoSQL). One particularly memorable course focused entirely on secure coding practices. We were given Java applications and tasked with identifying security flaws and recommending fixes based on our readings. We also learned how to conduct security audits using tools built into Maven and different testing methodologies such as penetration testing and risk assessments.</p>
+                <p>Several of my courses focused on current industry collaboration practices, both agile and waterfall. All my courses focused on fostering discussion among students and professors. Whether it was working with group members, participating in discussion boards, or discussing feedback received from my professors my degree has been achieved not only through my own efforts but also through excellent collaboration with my peers and teachers.</p>
+            </div>
+            <img src="images/profile_picture.jpg" alt="John Costello" class="profile-pic">
+        </div>
     </section>
     <section id="projects">
-        <h2>Projects</h2>
+        <h2>Artifacts and Enhancements</h2>
+        <p>Each artifact in my portfolio serves a specific purpose and collectively, they paint a holistic picture of my computer science talents and abilities. The Pokémon Stadium Randomizer projects illustrate my adaptability, problem-solving skills, and proficiency in both legacy and modern software development practices. The Travlr Getaways project and its enhancement highlight my expertise in full-stack development, database management, and user-centric design. Together, these artifacts demonstrate my comprehensive skill set, my ability to tackle diverse challenges, and my commitment to creating effective and user-friendly software solutions.</p>
+        <a href="https://vimeo.com/966176280?share=copy" target="_blank">Code Review</a>
         <ul>
-            <li>Project 1 - Description of project 1</li>
-            <li>Project 2 - Description of project 2</li>
-            <li>Project 3 - Description of project 3</li>
+            <li>
+                <h3>Pokémon Stadium Randomizer</h3>
+                <div>
+                    <a href="artifacts/pokemon-stadium-randomizer_PreEnhancements.zip">Download Original Artifact</a>
+                    <span> | </span>
+                    <a href="artifacts/stadium-randomizer-dotcom.zip">Download Enhanced Artifact</a>
+                </div>
+                <p>An application to randomize certain values in the game Pokémon Stadium for Nintendo 64. Users can upload their copy of the game to the program, and it will return a version of the game but with numbers shuffled around with the goal of providing a new experience. Originally this artifact was written in Java and was created and published in Fall 2023. I selected this item for my portfolio because I believe it is a unique project and provides a chance to showcase many different skills that I have developed over the course of my schoolwork and career.</p>
+                <ul>
+                    <li>
+                        Desktop Application to WebApp
+                        <p>Originally this application was written in a Java and was written to be a desktop app. After releasing the application I received feedback from users that it was difficult to setup the environment to run the randomizer, or their computers would flag the application as a potential virus. I decided the best way to resolve these issues was to convert the randomizer to a webapp instead. I rewrote the randomizer in Python and constructed a frontend using Angular.</p>
+                    </li>
+                    <li>
+                        Capturing Settings through FormData and Dictionaries
+                        <p>This second enhancement focused on expanding the capabilities of the Python portion of the webapp. Several of the functions used now accept levels of randomization, passed in as integers, that govern the limits of what the resulting in-game numbers can be. These settings are captured using FormData on the frontend and then recorded in dictionaries on the backend.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h3>Travlr Getaways</h3>
+                <div>
+                    <a href="artifacts/travlr_PreEnhancement">Download Original Artifact</a>
+                    <span> | </span>
+                    <a href="artifacts/travlr_PostEnhancement">Download Enhanced Artifact</a>
+                </div>
+                <p>This project is a mock of a travel booking website. Visitors can view a list of available trips and admin users can add as well as edit existing trips. The original version of this artifact was submitted as a final project for my full stack development course and serves to showcase my knowledge of the MEAN stack.</p>
+                <ul>
+                    <li>
+                        Building a Dashboard
+                        <p>In addition to the Trip Listings page, the website now offers a Dashboard for users to view trips that they have been booked for, or trips they have booked for other users. To facilitate this, I added Agent and Travler roles alongside the existing Admin role. A new collection, Bookings, was added to the database. This new collection ties together the travler, agent, and booked trip using their respectives identification codes. Results displayed on the dashboard are broken down by Traveler ID, and Agents can further filter the results to view only a single Traveler's bookings.</p>
+                    </li>
+                </ul>
+            </li>
         </ul>
     </section>
     <section id="contact">
         <h2>Contact</h2>
-        <p>This will contain my email, cell #, and link to my respositories as well as my LinkedIn page.</p>
+        <ul class="contact-info">
+            <li>Email: <a href="mailto:jcostello711@gmail.com">jcostello711@gmail.com</a></li>
+            <li>Cell: <a href="tel:2019614714">(201) 961-4714</a></li>
+            <li>
+                <span>Links: </span>
+                <a href="https://github.com/jciii91" target="_blank">GitHub</a>
+                <span> | </span>
+                <a href="https://www.linkedin.com/in/john-costello-iii-0360a486/" target="_blank">LinkedIn</a>
+            </li>
+        </ul>
     </section>
     <footer>
-        <p>&copy; 2024 My ePortfolio. All rights reserved.</p>
+        <p>&copy; 2024 John Costello ePortfolio. All rights reserved.</p>
     </footer>
 </body>
 </html>
